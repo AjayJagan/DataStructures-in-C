@@ -106,6 +106,14 @@ void deleteNum(int num, Node *head)
     }
    
 }
+int length(Node* head){
+    int count=0;
+    while(head->next!=NULL){
+        count++;
+        head=head->next;
+    }
+    return count;
+}
 void printList(Node *head)
 {
     Node *firstNode = head->next;
